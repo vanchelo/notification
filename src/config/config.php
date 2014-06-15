@@ -1,7 +1,6 @@
 <?php
 
-return array(
-
+return [
     /*
     |--------------------------------------------------------------------------
     | Session prefix name
@@ -10,7 +9,7 @@ return array(
     | This will be used to prefix flash messages.
     |
     */
-    'session_prefix'                        => 'notifications_',
+    'session_prefix' => 'notifications_',
 
     /*
     |--------------------------------------------------------------------------
@@ -20,7 +19,7 @@ return array(
     | This name will be used to name default container (when calling it with null value).
     |
     */
-    'default_container'                     => 'default',
+    'default_container' => 'default',
 
     /*
     |--------------------------------------------------------------------------
@@ -35,11 +34,9 @@ return array(
     | :message - message text.
     |
     */
-    'default_format'                        => array(
-
-        'default'               => '<div class="alert alert-:type">:message</div>',
-
-    ),
+    'default_format' => [
+        'default' => '<div class="alert alert-:type">:message</div>',
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -61,13 +58,9 @@ return array(
     | :message - message text.
     |
     */
-    'default_formats'                       => array(
-
-        'default'               => array(
-
-        ),
-
-    ),
+    'default_formats' => [
+        'default' => [],
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -77,10 +70,7 @@ return array(
     | Specify available types for each container.
     |
     */
-    'default_types'                         => array(
-
-        'default'               => array('info', 'success', 'warning', 'error'),
-
-    ),
-
-);
+    'default_types' => [
+        'default' => ['info', 'success', 'warning', 'error'],
+    ],
+];
